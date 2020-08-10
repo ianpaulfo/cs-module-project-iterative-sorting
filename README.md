@@ -7,8 +7,16 @@
 ## Objectives
 
 - describe the differences between Linear and Binary Search algorithms
+
+    Linear search sequentially checks each element of the list for the target value until a match is found.
+    Binary search finds the position of a target value by repeatedly dividing the search interval in half.
+
 - define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+
+    In linear search, the worst case complexity is O(n), where binary search making O(log n) comparisons.
+
 - distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
+
 
 ## Introduction
 
@@ -20,16 +28,16 @@ As you begin interviewing for jobs, you will often be expected to be able to imp
 
 ## Instructions and/or completion requirements
 
-- [ ] Open up the [iterative_sorting](src/iterative_sorting) directory
-- [ ] Read through the descriptions of the `bubble_sort` and `selection_sort` algorithms
-- [ ] Implement `bubble_sort` and `selection_sort` in [iterative_sorting.py](src/iterative_sorting/iterative_sorting.py)
-- [ ] Test your implementation by running `test_iterative.py`
-- [ ] Implement all the methods in the [searching.py](src/searching/searching.py) file in the [searching](src/searching) directory.
-- [ ] Test your implementation of the searching methods by running `test_searching.py`.
+- [x] Open up the [iterative_sorting](src/iterative_sorting) directory
+- [x] Read through the descriptions of the `bubble_sort` and `selection_sort` algorithms
+- [x] Implement `bubble_sort` and `selection_sort` in [iterative_sorting.py](src/iterative_sorting/iterative_sorting.py)
+- [x] Test your implementation by running `test_iterative.py`
+- [x] Implement all the methods in the [searching.py](src/searching/searching.py) file in the [searching](src/searching) directory.
+- [x] Test your implementation of the searching methods by running `test_searching.py`.
 
 ## Stretch goals
 
-- [ ] Implement the `counting_sort` [algorithm](https://en.wikipedia.org/wiki/Counting_sort) in the [iterative_sorting](src/iterative_sorting) directory.
+- [x] Implement the `counting_sort` [algorithm](https://en.wikipedia.org/wiki/Counting_sort) in the [iterative_sorting](src/iterative_sorting) directory.
 
 ## Tests
 
