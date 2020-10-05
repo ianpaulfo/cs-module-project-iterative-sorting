@@ -48,8 +48,28 @@ buckets.
 
 What is the time and space complexity of the counting sort algorithm?
 '''
+
+# Counting sort takes O(n + k)O(n+k) time and O(n + k)O(n+k) space, where nn is the number of items we're sorting and kk is the number of possible values.
+
 def counting_sort(arr, maximum=None):
     # Your code here
-
-
+    size = len(arr)
+    output = [0] * size
+    count = [0] * 10
+    for i in range(size):
+        count[arr[i]] += 1
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+    i = size - 1
+    while i >= 0:
+        output[count[arr[i]] - 1] = arr[i]
+        count[arr[i]] -= 1
+        i -= 1
+    for i in range(0, size):
+        arr[i] = output[i]
     return arr
+
+data = [4, 2, 2, 8, 3, 3, 1, 0]
+counting_sort(data)
+print("Sorted Array in Ascending Order: ")
+print(data)
